@@ -1,0 +1,19 @@
+syntax = "proto3";
+import "too.proto";
+service CommonService {
+  rpc GetCustomer (CustomerID) returns (Customer);
+  rpc GetCustomers (CustomerID) returns (Customers);
+}
+
+message CustomerID {
+  int32 id = 1;
+}
+
+message Customer {
+  int32 id = 1;
+  string name = 2;
+}
+
+message Customers {
+  repeated Customer customers = 1;
+}

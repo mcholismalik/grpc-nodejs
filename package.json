@@ -1,0 +1,20 @@
+{
+  "name": "grpc-playground",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon ./server/app",
+    "client": "nodemon ./client/app"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@grpc/proto-loader": "^0.5.0",
+    "axios": "^0.18.0",
+    "express": "^4.17.0",
+    "grpc": "^1.20.3",
+    "grpc-promise": "^1.4.0"
+  }
+}
